@@ -1,3 +1,20 @@
-create an application.py
-add a basic flask to the application.py
-init eb using cli
+step 1: clone this repo
+step 2: modify to fit your needs
+step 3A: install the eb-cli if not already installed
+step 3B: run eb init in the command line and go through the init process
+step 4: zip up files to application.zip
+step 5: create a new Elastic Beanstalk on aws with the zip file as the custom code(this will take about 5-10 minutes)
+step 6: click on the configuration under the enviroment that aws just created
+step 7: click on edit next to the database option
+step 8: create a database
+step 9: goto the database on the rds on aws
+step 10: click on the link to the VPC security groups ( listed under the connectivity and security )
+step 11: click on edit inbound rules (listed under the inbound rules tab)
+step 12: add a new rule (type: 'All Traffic', source: 'My IP') and click save
+step 13: connect to database using postbird
+step 14: create tables needed
+step 15: edit config file to have the the postgres required to connect to the database
+step 16: edit other files creating new routes, blueprints, etc as needed
+step 17: rezip files
+step 18: upload new zip file to enviroment and deploy using the aws site
+step 19: continue steps 16-18 as needed
