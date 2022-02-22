@@ -1,0 +1,3 @@
+create an application.py
+add a basic flask to the application.py
+init eb using cli
